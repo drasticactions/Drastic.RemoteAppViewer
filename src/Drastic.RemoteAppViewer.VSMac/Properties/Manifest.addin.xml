@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionModel>
+  <Runtime>
+  </Runtime>
+
+  <Extension path="/MonoDevelop/Ide/Pads/Debug">
+    <Pad id="Drastic.RemoteAppViewer.RemoteAppViewerPad"                      
+         _label="RemoteAppViewer" 
+         class="Drastic.RemoteAppViewer.VSMac.RemoteAppViewerPad" 
+         defaultPlacement="Right" group="Diagnostics" 
+         insertafter="MonoDevelop.Debugger.ThreadsPad" />
+  </Extension>
+
+</ExtensionModel>
