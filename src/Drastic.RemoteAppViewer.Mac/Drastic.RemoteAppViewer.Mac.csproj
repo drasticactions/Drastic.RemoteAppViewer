@@ -2,13 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0-macos</TargetFramework>
-		<IsAddin>True</IsAddin>
-		<IsPackable>False</IsPackable>
-		<ProjectCapability>VSMAddin</ProjectCapability>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<LangVersion>latest</LangVersion>
-    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <EnableCodeSigning>false</EnableCodeSigning>
@@ -23,12 +18,5 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Drastic.RemoteAppViewer\Drastic.RemoteAppViewer.csproj" />
-    <ProjectReference Include="..\Drastic.RemoteAppViewer.Mac\Drastic.RemoteAppViewer.Mac.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="Microsoft.VisualStudioMac.Sdk" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudioMac.Sdk" Version="17.0.0" />
   </ItemGroup>
 </Project>
