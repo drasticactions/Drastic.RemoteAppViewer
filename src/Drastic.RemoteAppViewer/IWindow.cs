@@ -9,13 +9,8 @@ namespace Drastic.RemoteAppViewer
     /// <summary>
     /// Window information.
     /// </summary>
-    public interface IWindow
+    public interface IWindow : ISurface
     {
-        /// <summary>
-        /// Gets the window title.
-        /// </summary>
-        string Title { get; }
-
         /// <summary>
         /// Gets the raw handler.
         /// </summary>

@@ -9,7 +9,7 @@ namespace Drastic.RemoteAppViewer
     /// <summary>
     /// Monitor Information.
     /// </summary>
-    public interface IMonitor
+    public interface IMonitor : ISurface
     {
         /// <summary>
         /// Gets a value indicating whether the monitor is the primary monitor on the computer.
@@ -30,11 +30,6 @@ namespace Drastic.RemoteAppViewer
         /// Gets the total work area.
         /// </summary>
         Rectangle WorkArea { get; }
-
-        /// <summary>
-        /// Gets the monitor name.
-        /// </summary>
-        string DeviceName { get; }
 
         /// <summary>
         /// Gets the raw handler.

@@ -19,7 +19,7 @@ namespace Drastic.RemoteAppViewer.Mac
             this.ScreenSize = new SizeF(display.Width, display.Height);
             this.MonitorArea = new Rectangle(0, 0, (int)display.Width, (int)display.Height);
             this.WorkArea = new Rectangle(0, 0, (int)display.Width, (int)display.Height);
-            this.DeviceName = display.DisplayId.ToString();
+            this.Title = display.DisplayId.ToString();
             this.Display = display;
 
             // TODO: Is that right?
@@ -39,7 +39,7 @@ namespace Drastic.RemoteAppViewer.Mac
         public Rectangle WorkArea { get; }
 
         /// <inheritdoc/>
-        public string DeviceName { get; }
+        public string Title { get; }
 
         /// <summary>
         /// Gets the Mac Display.
